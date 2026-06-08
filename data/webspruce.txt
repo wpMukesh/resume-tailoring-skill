@@ -21,17 +21,6 @@ Detailed point bank:
 
 - Delivered full-stack ERP workflows across Node.js/Express/MongoDB backends and React/React Native frontends, connecting database models, service logic, role-protected APIs, frontend forms, reports, and download flows.
 
-- Built attendance APIs and screens for creating attendance records from timetable, date range, slots, subjects, sections, lab batches, and selected students.
-
-- Used MongoDB bulkWrite upserts in attendance creation to generate many records safely while avoiding duplicate attendance rows.
-
-- Developed attendance and campus reporting APIs using MongoDB aggregation for attendance records, active slots, occupied spaces, busy faculty, and available lecturers.
-
-- Built lecturer availability and room/space overview workflows that helped administrators identify occupied rooms, busy lecturers, and available faculty by time and slot.
-
-- Implemented task assignment workflows with employee/hierarchy validation, file attachments, assigned/pending task views, task status updates, and automatic personal notifications.
-
-- Built meeting management and personal notification flows with backend services and React admin pages.
 
 - Integrated role-based access control across ERP modules using JWT authentication, backend permission middleware, role/module permission definitions, frontend protected routes, menu visibility, and reusable permission-check components.
 

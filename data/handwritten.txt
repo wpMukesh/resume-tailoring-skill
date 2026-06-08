@@ -2,11 +2,11 @@ Experience
 
 Company: Webspruce
 
-Project: Note For Approval Workflow System, A approval workflow system used in manufacturing industry where users create Note For Approval requests from reusable templates, fill dynamic request details, where they clarify and get approvals. The system used Hono, PostgreSQL, Drizzle ORM, Zod, React, Vite, TanStack Query, TanStack Table, React Hook Form, Tailwind, and dnd-kit.
+Project: Note For Approval Workflow System | Node.js, TypeScript, Hono, PostgreSQL, Drizzle, React, Zod, React Router, TanStack Query, shadcn/ui
 
-- Built a NFA workflow product covering template-based request creation, dynamic request details, role-based member management, clarifications, and approval routing, with strict TypeScript, linting, formatting, pre-commit hooks, and build checks maintained across frontend and backend repositories.
+- Built a manufacturing-focused NFA workflow product for creating template-based approval requests, filling template-defined details, managing role-based members, handling clarification discussions, and routing requests through structured approval flows.
 
-- Designed an extensible PostgreSQL schema for a template-based approval workflow, supporting admin-created templates, dynamic request details, approver/viewer/clarifier members, clarifications, posts, and edit history.
+- Designed an extensible PostgreSQL schema for a template-based approval workflow, supporting admin-created templates, dynamic request details, approver/viewer/clarifier members, clarifications, posts, and edit history. while maintaining strict TypeScript, linting, formatting through pre-commit hooks, and build checks across frontend and backend repositories.
 
 - Standardized API response envelopes for success, error, warning, and no-op cases, allowing the frontend to consistently handle typed data, server-driven user-visible warnings, validation failures, and unchanged updates.
 
@@ -14,23 +14,23 @@ Project: Note For Approval Workflow System, A approval workflow system used in m
 
 - Designed reusable list API patterns with search, typed date filters, typed sort columns, cursor pagination, and hydrated listing responses, improving consistency across modules and reducing extra frontend data-fetching.
 
-- Built a template-configured request form system where admins creates fields such as rich text, options, and numeric inputs, configures template using these fields. As well as an intiutive responsive UIs for field creation, template configuration, and request details submission.
+- Built a template-configured request form system where admins created fields such as rich text, options, and numeric inputs, configured templates using those fields, and users submitted request details through intuitive responsive UIs.
 
-- Implemented server-authoritative, configuration-driven validation for submitted request details, enforcing option membership, template configuration like required fields, selected fields, and more.
+- Implemented server-authoritative, configuration-driven validation for submitted request details, enforcing option membership, template configuration like required fields, selected fields and template-specific rules.
 
 - Built role-based request member workflows for approvers, viewers, and clarifiers, supporting drag-and-drop approver ordering with atomic reorder updates.
 
 - Built reusable frontend data-table components with configurable debounced search, selectable date filters, type-safe column sorting, loading states, and cursor-based pagination with previously visited page navigation.
 
-Project: School & University ERP, school/college ERP modules used by school administrators, finance teams, teachers, students, HODs, deans, COE users, and other staff. The ERP work covered fee management, academic marks, attendance, SMS communication, reports, role permissions, campus availability, tasks, meetings, notifications, PDF/Excel generation, and React/React Native workflow screens.
+Project: School & University ERP | Node.js, Express.js, MongoDB, React, React Native, MUI, Puppeteer, ExcelJS, Webhooks
 
-- Optimized ERP reporting and bulk-update workflows using MongoDB aggregation pipelines, server-side filtering,  map-based data grouping, and batched bulkWrite operations to reducing db overload, remove unnecessary data processing and improve report generation performance.
+- Delivered ERP workflows for schools and universities across academic marks, finance, attendance, SMS communication, reporting, and campus operations, used by administrators, academic staff, finance teams, teachers, and students.
 
 - Built fee collection workflows supporting class/category-based fee allocation, new-joinee and transport fee handling, partial payments, concessions, penalties, miscellaneous amounts, payment-mode validation, and deleted-receipt audit history.
 
-- Built finance audit and reporting workflows with fee overview dashboards, wide range of filters, multi-format receipt generation, Excel reports, and filtered collection summaries for finance teams.
+- Built finance audit and reporting workflows with fee overview dashboards, advanced filters, multi-format receipt generation, Excel reports, and filtered collection summaries for finance teams.
 
-- Built exam and academic marks workflows covering exam scheduling, hall-ticket generation, attendance tracking, marks entry, bulk marks updates through Excel import/export, marks-freeze dates, exam results.
+- Built exam and academic marks workflows covering exam scheduling, hall-ticket generation, attendance tracking, marks entry, bulk marks updates through Excel import/export, marks-freeze dates and exam results.
 
 - Built academic reporting workflows including configurable consolidated reports, subject-wise and division-wise analytics, progress reports and marks-card generation across multiple class-specific formats.
 
@@ -38,4 +38,46 @@ Project: School & University ERP, school/college ERP modules used by school admi
 
 - Built attendance workflows that auto-configured attendance from timetables and semester calendars, allowing lecturers to take attendance for scheduled lectures and lab sessions without manual setup.
 
-- Built administrative workflows for HODs and administrators, covering meeting scheduling, task assignment, lecturer availability by date/slot, and room occupancy views to identify free lecturers, occupied rooms, and available spaces.
+- Built administrative workflows for HODs and administrators, covering meeting scheduling, staff task management, lecturer availability by date/slot, and room occupancy views to identify free lecturers, occupied rooms, and available spaces.
+
+- Optimized ERP reporting and bulk-update workflows using MongoDB aggregation pipelines, server-side filtering, map-based data grouping, and batched bulkWrite operations to reduce database load and remove unnecessary processing.
+
+- Implemented RBAC and object-level authorization checks in fee and marks workflows, enforcing finance permissions and restricting marks updates to the teacher's assigned academic scope.
+
+Company: Cognizant
+
+Job Title: L2 Support Engineer
+
+Project: Insurance Company Production Support | Datadog, Splunk, MySQL, Node.js, YAML, JIRA, AWS, ASP.NET
+
+- Supported an insurance-domain production application as an L2 Support Engineer, combining incident triage, backend log analysis, MySQL data investigation, operational automation, AWS production support, and cross-team coordination across business-critical workflows.
+
+- Investigated production incidents and PagerDuty on-call alerts using Splunk and Datadog logs, dashboards, saved queries, request traces, timestamps, error patterns, and operational trends to isolate likely root causes before escalation and documented findings/triage notes.
+
+- Developed Datadog and Splunk dashboards, saved queries, monitors, and alerts through version-controlled YAML configuration workflows, improving change traceability, production visibility, and fault-identification time by about 70%.
+
+- Wrote MySQL queries to extract, validate, and analyze operational data for support tickets, user issues, claims-related checks, data mismatches, and production investigations.
+
+- Automated recurring CSV/XLSX data-processing workflows with JavaScript CLI tools, reducing manual Excel handling and saving about 2–3 hours per employee each week.
+
+- Coordinated with support, development, and client-facing teams through JIRA to track incidents, share logs/query outputs, validate fixes, and align production issues with engineering delivery.
+
+- Worked with AWS-hosted production environments by supporting Auto Scaling setup, data backup activities, degraded-instance recovery validation, and infrastructure-related follow-ups with engineering teams.
+
+- Built GoContacts during training, a contact-management web app with contact CRUD, label-based organization, user-scoped filtering, and admin access controls, using ASP.NET, Entity Framework, normalized SQL Server schema, Razor views, Bootstrap.
+
+Company: Marmeto
+
+Job Title: Frontend Intern
+
+Project: E-commerce Storefront Development | Shopify Liquid, JavaScript, HTML, CSS, Tailwind, Monday.com
+
+- MISSING SUMMARY
+
+- Developed configurable Shopify product-detail page templates for a client storefront, allowing products to use different PDP layouts configured through store-editor settings while supporting dynamic product content.
+
+- Built homepage sections for a client e-commerce storefront using reusable storefront sections and prototyped a homepage interaction inspired by Zara-style parallax scrolling.
+
+- Worked across multiple client Shopify storefronts, developing customer profile-page, integrating external services/APIs, remediating technical debt improving maintainability, debugging JavaScript/Liquid/CSS issues, and mobile responsiveness issues while tracking assigned work through Monday.com.
+
+- Built a complete demo Shopify storefront during training with sample product catalog workflows, including product listing, collection pages, product-detail pages, cart drawer behavior, storefront sections, and responsive UIs.

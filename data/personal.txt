@@ -27,7 +27,7 @@ Best resume project order:
  Project - DrawInSync
 
 Project description:
-DrawInSync is a real-time collaborative whiteboard prototype. It lets authenticated users create or access boards and draw shared shapes on a canvas while a standalone WebSocket server broadcasts drawing events to users connected to the same board.
+DrawInSync is a real-time collaborative whiteboard prototype.
 
 Stack:
 TypeScript, Node.js, Express.js, WebSocket/ws, Next.js 15, React 19, NextAuth Credentials, Prisma, PostgreSQL, JWT, Argon2, Zod, pnpm workspace, Turborepo, Tailwind CSS.
