@@ -1,0 +1,118 @@
+Cognizant Resume Point Bank
+Target roles: Node.js Backend Developer / Full Stack Developer
+Experience duration: Dec 2023 - Mar 2025
+Main role: L2 Support Engineer on insurance-domain client project from about May 2024 - Mar 2025
+Training period: Software trainee on .NET from Dec 2023 - Apr 2024
+
+Resume positioning:
+
+Cognizant should be framed as production support, backend debugging, observability, SQL/data support, automation, and incident triage experience. It is useful for Node.js/backend roles because it shows real production-system exposure: reading logs, understanding APIs, writing queries, automating repetitive data work, creating dashboards/alerts, coordinating with development/support teams, and documenting triage flows.
+
+Avoid positioning this role as a primary Node.js product-development role. Strong wording is "L2 support engineer", "production issue triage", "observability", "automation scripts", "SQL data investigation", "backend issue analysis", and "support-to-engineering coordination".
+
+Short role summary:
+
+Junior Software Engineer / L2 Support Engineer at Cognizant, supporting an insurance-domain client application. Worked on production issue triage, log analysis, MySQL data requests, optional Salesforce user/permission support, dashboards/monitors/alerts in Datadog and Splunk using YAML configuration files, Node.js CLI automation scripts for CSV/XLSX processing, and JIRA-driven defect coordination. Earlier completed .NET training and built GoContacts using ASP.NET MVC, Entity Framework, SQL Server, Identity, and Razor views.
+
+Detailed point bank:
+
+- Supported a client application as an L2 Support Engineer, triaging production incidents, service errors, user issues, data mismatches, and operational requests across backend workflows.
+
+- Investigated application issues using Splunk and Datadog logs, dashboards, queries, request traces, error messages, timestamps, and affected-user details to identify likely root causes before escalation.
+
+- Used structured log searches in Splunk and Datadog to trace API failures, integration issues, service exceptions, and data-processing errors across production workflows.
+
+- Created and maintained Datadog dashboards to improve visibility into application health, recurring errors, operational trends, and production support metrics.
+
+- Built Splunk dashboards and saved searches for faster issue identification, helping support and engineering teams debug failures without repeatedly recreating manual searches.
+
+- Developed monitoring queries, log parsing rules, dashboards, monitors, and alerts in Datadog and Splunk using YAML configuration files to improve incident detection and reduce fault-identification time by about 70%.
+
+- Wrote YAML configuration files for dashboards, monitors, and alerts, committed changes to GitHub, and used automated workflows to apply observability updates.
+
+- Wrote MySQL queries to extract, validate, and analyze requested operational data for support tickets, user issues, claims/data checks, and production investigations.
+
+- Handled data-support requests by querying databases, validating expected vs actual records, and sharing clear findings with support, development, or client-facing teams.
+
+- Built terminal-run Node.js CLI scripts that accepted CSV/XLSX file paths, processed recurring Excel template data, and generated output files, reducing manual effort by about 2-3 hours per employee each week.
+
+- Automated repetitive CSV/XLSX extraction, transformation, and output-file generation tasks, improving turnaround time for operational requests and reducing manual copy/paste work.
+
+- Optionally include if space allows: supported Salesforce administration tasks including user management, permission/access updates, and claims/data-related support activities.
+
+- Optionally include if space allows: managed user access and permission-related requests in Salesforce, coordinating with support stakeholders to keep access changes traceable and aligned with ticket requirements.
+
+- Participated in JIRA-driven support and engineering workflows, updating ticket status, documenting investigation notes, tracking fixes, and coordinating with development teams.
+
+- Coordinated with support and development teams to reproduce issues, validate behavior, share logs/query outputs, and confirm whether defects required code changes or data correction.
+
+- Worked with backend engineers during defect analysis, including reviewing error patterns, validating fixes, and understanding coding standards through code reviews and walkthrough meetings.
+
+- Implemented minor backend enhancements and bug fixes in client project workflows, including functionality changes and Excel-processing improvements tracked through JIRA.
+
+- Participated in Scrum ceremonies, sprint discussions, walkthrough meetings, retrospectives, and code reviews to align support findings with engineering delivery.
+
+- Documented API behavior, known failure scenarios, error-triage steps, dashboard usage, and support handoff notes so other teams could resolve recurring issues faster.
+
+- Created troubleshooting notes and triage documentation for repeated production issues, reducing dependency on individual knowledge during support handoffs.
+
+- Helped maintain API uptime by monitoring application health, following on-call procedures, and coordinating incident response through PagerDuty.
+
+- Worked with AWS operational concepts such as EC2, auto scaling, load balancers, target groups, and degraded-instance handling while supporting application availability.
+
+- Supported production operations by identifying degraded servers, coordinating restarts/replacements where required, and using monitoring signals to validate service recovery.
+
+- Learned and applied Agile/Scrum practices, OWASP web-security basics, cloud concepts, and production support discipline while working in a client-facing enterprise environment.
+
+.NET training / GoContacts point bank:
+
+- Completed Cognizant training in computer science fundamentals, C#, ASP.NET MVC, SQL Server, Entity Framework, LINQ, Razor views, jQuery, and related .NET web technologies.
+
+- Built GoContacts, a contact-management web application using ASP.NET MVC, Entity Framework, SQL Server, ASP.NET Identity, Razor views, Bootstrap, and jQuery.
+
+- Designed user-owned contact and label modules with relational data modeling, Entity Framework Code First, validation attributes, foreign keys, and contact-label relationships.
+
+- Implemented authenticated user workflows for creating, updating, viewing, filtering, categorizing, and deleting contacts.
+
+- Added label-based organization so users could group contacts using customizable categories and filter contact lists by label.
+
+- Built admin screens to enable or disable user access, demonstrating role-based access handling with ASP.NET Identity.
+
+- Used LINQ and Entity Framework queries for user-scoped data retrieval, contact filtering, and database-backed page rendering.
+
+- Created server-rendered Razor views and Bootstrap-based UI screens for contact forms, list pages, admin workflows, and user-management flows.
+
+Strongest ATS keywords:
+
+Production Support, L2 Support, Incident Triage, Root Cause Analysis, Observability, Monitoring, Alerting, Datadog, Splunk, YAML Configuration, GitHub Actions, SQL, MySQL, Node.js CLI Scripts, CSV, XLSX, Excel Automation, Salesforce Administration, JIRA, Agile, Scrum, PagerDuty, AWS, EC2, Auto Scaling, Load Balancer, API Debugging, Log Analysis, Backend Support, C#, ASP.NET MVC, Entity Framework, LINQ, SQL Server, Razor Views, ASP.NET Identity.
+
+Short final resume versions:
+
+Version 1 - Backend/observability focused:
+
+Junior Software Engineer / L2 Support Engineer at Cognizant, supporting an insurance-domain client production application through incident triage, log analysis, MySQL data investigation, automation, and monitoring improvements. Built dashboards, monitors, and alerts in Datadog/Splunk using YAML configuration files committed through GitHub and applied by automated workflows, plus Node.js CLI scripts for CSV/XLSX processing that reduced manual effort by 2-3 hours per employee weekly and improved fault-identification time by about 70%. Coordinated with development/support teams through JIRA, documented API/error-triage flows, and optionally supported user/data access activities including Salesforce permissions.
+
+Version 2 - Resume bullet set:
+
+- Supported an insurance-domain client production application as an L2 Support Engineer, triaging incidents using Splunk, Datadog, MySQL queries, JIRA tickets, and documented error-investigation workflows.
+- Built terminal-run Node.js CLI scripts to process CSV/XLSX files and generate output files for recurring template workflows, reducing manual effort by 2-3 hours per employee weekly.
+- Created Datadog/Splunk dashboards, saved searches, monitoring queries, monitors, and alerts using YAML configuration files committed through GitHub and applied by automated workflows, reducing fault-identification time by about 70%.
+- Wrote MySQL queries to extract, validate, and analyze operational data for production issues, user requests, claims/data checks, and support investigations.
+- Coordinated with support, development, and client-facing teams to reproduce defects, share logs/query outputs, validate fixes, and document API/error-triage processes.
+- Optional if space allows: supported Salesforce user and permission-management requests while maintaining traceability through ticket-based workflows.
+- Completed .NET training and built GoContacts, an ASP.NET MVC contact-management app using Entity Framework, SQL Server, Razor views, and ASP.NET Identity.
+
+Version 3 - Compact resume bullet set:
+
+- Triaged production issues as an L2 Support Engineer using Splunk, Datadog, MySQL, JIRA, and documented support runbooks for an insurance-domain client application.
+- Automated recurring CSV/XLSX data-processing workflows with Node.js CLI scripts, reducing manual effort by 2-3 hours per employee weekly.
+- Built Datadog/Splunk dashboards, monitors, and alerts using YAML configuration files committed through GitHub and applied by automated workflows, improving observability and reducing fault-identification time by about 70%.
+- Optional if space allows: supported Salesforce user/permission requests and production data investigations through MySQL queries and ticket-based workflows.
+- Built GoContacts during .NET training using ASP.NET MVC, Entity Framework, SQL Server, Razor views, and ASP.NET Identity.
+
+Use careful wording:
+
+- Good wording: "supported production systems", "triaged incidents", "created dashboards, monitors, and alerts using YAML configuration files", "wrote MySQL queries", "automated CSV/XLSX processing", "built Node.js CLI automation scripts", "coordinated with engineering teams", "documented error-triage flows".
+- Avoid overclaiming: do not say "owned backend architecture", "designed the core product", "led production engineering", or "built Node.js services" for Cognizant unless more details are confirmed.
+- If space is tight, keep the Cognizant section focused on observability, automation, SQL, and production debugging. Keep GoContacts as one bullet or move it to projects.
+

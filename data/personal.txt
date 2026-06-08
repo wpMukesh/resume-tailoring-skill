@@ -1,0 +1,292 @@
+Resume Source Notes - Personal Projects
+
+ Overall Positioning
+
+Short profile summary:
+Full-stack developer focused on Node.js and TypeScript backends, REST APIs, WebSocket systems, authentication, validation, and database-backed product workflows. Built projects using Express.js, MongoDB/Mongoose, PostgreSQL/Prisma, JWT, Zod, React, Next.js, Tailwind CSS, and monorepo tooling. Strongest project signals are backend API design, auth flows, data modeling, full-stack integration, and real-time collaboration prototypes.
+
+Stronger 2-line resume summary:
+Full-stack / backend developer with hands-on experience building Node.js APIs, TypeScript services, real-time WebSocket flows, JWT authentication, Zod validation, and database models using MongoDB/Mongoose and PostgreSQL/Prisma. Built complete product workflows across React/Next.js frontends and Express backends, including content management, collaborative whiteboards, course APIs, dashboards, and user access control.
+
+Primary technical themes:
+- Backend: Node.js, Express.js, TypeScript, REST APIs, WebSockets, JWT auth, Zod validation, bcrypt, Argon2, dotenv, CORS.
+- Databases: MongoDB, Mongoose, PostgreSQL, Prisma ORM, SQL Server, Entity Framework.
+- Frontend: React, Next.js App Router, React Router, NextAuth, Tailwind CSS, shadcn/Radix UI, Recharts, TanStack Table.
+- Architecture: monorepo structure, shared packages, API/frontend separation, reusable React components/hooks, typed schemas, route middleware.
+- Product workflows: signup/signin, protected routes, content CRUD, board sharing, collaborator access, public share links, dashboard UI, bulk actions.
+
+Best resume project order:
+1. DrawInSync - strongest Node/TypeScript/backend architecture signal because it includes Express, WebSockets, Prisma/PostgreSQL, Next.js, auth, and monorepo structure.
+2. Brainsily - strongest complete full-stack CRUD/product workflow signal with React + Express + MongoDB.
+3. SkillSchool - focused Node/Express backend API with auth, course operations, and MongoDB models.
+4. Support Me Dashboard (shadcn) - supporting frontend/Next.js UI project.
+5. GoContacts - supporting full-stack/backend project in ASP.NET MVC, useful to show broader backend/database experience.
+6. Tailwind festival page - optional frontend styling project only.
+
+
+ Project - DrawInSync
+
+Project description:
+DrawInSync is a real-time collaborative whiteboard prototype. It lets authenticated users create or access boards and draw shared shapes on a canvas while a standalone WebSocket server broadcasts drawing events to users connected to the same board.
+
+Stack:
+TypeScript, Node.js, Express.js, WebSocket/ws, Next.js 15, React 19, NextAuth Credentials, Prisma, PostgreSQL, JWT, Argon2, Zod, pnpm workspace, Turborepo, Tailwind CSS.
+
+Architecture:
+- Monorepo with separate apps for frontend, HTTP server, and WebSocket server.
+- Shared packages for Prisma database access, validation/types, TypeScript config, Tailwind config, UI, and ESLint config.
+- Express HTTP API handles auth, board management, collaborator access, board lookup, and WebSocket token generation.
+- WebSocket server authorizes connections with JWT and stores board-scoped connection buckets for broadcasting shape messages.
+- Prisma schema models users, boards, collaborators, and drawable elements with unique constraints, composite keys, indexes, timestamps, and soft-deletes.
+
+Core workflows:
+- User signup/signin with Zod validation, Argon2 password hashing, and JWT issuance.
+- NextAuth Credentials login calls the custom backend signin API and stores backend JWT data in the session.
+- Board creation with owner automatically added as an editor collaborator.
+- Owned/shared board listing through Prisma relation filters.
+- Collaborator upsert by username and board ID.
+- Slug-to-board lookup, board detail lookup, access checks, element lookup, and short-lived WebSocket token generation.
+- Canvas drawing for rectangle, circle, and line tools with pending/synced state on the client.
+- Per-board WebSocket broadcasting of shape events.
+
+Resume bullets:
+- Built a TypeScript monorepo for a collaborative whiteboard with separate Next.js frontend, Express HTTP API, WebSocket service, shared Prisma client, and shared validation packages.
+- Implemented authentication APIs using Zod validation, Argon2 password hashing, JWT issuance, and Prisma-backed user lookup/creation.
+- Designed a PostgreSQL/Prisma schema for users, boards, collaborators, and drawable elements, including role enums, unique board slugs, composite collaborator keys, timestamps, soft deletes, and board indexes.
+- Built protected board APIs for owned/shared board listing, board creation, collaborator role upsert, slug resolution, board access checks, element retrieval, and WebSocket token generation.
+- Integrated NextAuth Credentials with a custom backend signin endpoint and propagated backend JWTs into server-side authenticated frontend requests.
+- Implemented a canvas drawing engine that supports rectangles, circles, and lines, tracks pending vs synced shapes, translates screen coordinates into virtual canvas coordinates, and redraws canvas state on updates.
+- Prototyped real-time board synchronization using a standalone WebSocket server with JWT-authorized connections and board-scoped broadcast groups.
+
+What this project proves:
+- Comfortable building across backend, frontend, database, authentication, and real-time layers.
+- Understands separation of services: HTTP API vs WebSocket server vs frontend vs shared packages.
+- Can model relational backend domains with Prisma and use JWT-based access for both REST and WebSocket flows.
+- Has hands-on experience with canvas and real-time event propagation.
+
+Use careful wording:
+- Good wording: "prototyped real-time synchronization", "board-scoped WebSocket broadcasting", "collaborative whiteboard prototype".
+- Avoid overclaiming: do not say it is production-scale, Redis-backed, fully persistent, conflict-free, or horizontally scalable.
+
+ Project - Brainsily
+
+Project description:
+Brainsily is a full-stack "second brain" app for saving, organizing, filtering, and sharing personal knowledge items such as notes, links, tweets, and YouTube videos. It includes a React/Vite frontend and a Node.js/Express/MongoDB backend.
+
+Stack:
+Node.js, Express.js, TypeScript, MongoDB, Mongoose, JWT, Zod, React 18, Vite, React Router, Axios, Tailwind CSS, react-tweet.
+
+Architecture:
+- Separate backend and frontend apps.
+- Express backend exposes REST APIs for auth, content CRUD, and public brain sharing.
+- JWT middleware protects private content routes.
+- Mongoose models represent users, content, tags, and content-tag links.
+- Zod schemas validate user and content payloads.
+- Frontend uses React Router, reusable components, custom hooks, modals, cards, sidebar filters, and Tailwind layout.
+
+Core workflows:
+- Signup/signin and token storage on the frontend.
+- Protected dashboard for authenticated content management.
+- Create, read, filter, and delete content.
+- Support for multiple content formats: text, tweet, YouTube video, and links.
+- Tweet and YouTube preview handling while adding content.
+- User-controlled public sharing with encrypted share links.
+- Read-only shared board route for public viewers.
+
+Resume bullets:
+- Built a full-stack second-brain application for saving, organizing, filtering, and sharing notes, tweets, YouTube videos, and links using React, Node.js, Express, TypeScript, and MongoDB.
+- Implemented JWT-based authentication with signup/signin APIs, token issuance, protected Express middleware, and frontend route/session handling.
+- Added Zod validation for user and content payloads across backend APIs and frontend forms, surfacing structured validation errors in the UI.
+- Designed Mongoose schemas for users, content, tags, and content-tag links, including owner references, enum-constrained content formats, unique user fields, and JSON response transforms.
+- Built authenticated content CRUD APIs with owner-scoped reads/deletes and frontend synchronization through a reusable React hook.
+- Implemented public brain sharing by toggling user share state, generating encrypted share links, and rendering read-only shared boards through a dedicated public route.
+- Created a React dashboard with reusable cards, sidebar filters, modals, content deletion, clipboard sharing, toast notifications, and responsive Tailwind grid utilities.
+- Added rich previews for tweets and YouTube videos, including URL validation, YouTube embed URL normalization, and live preview inside the content creation modal.
+
+What this project proves:
+- Full-stack MERN-style product development from database to UI.
+- Ability to create useful user workflows, not only isolated endpoints.
+- Practical auth middleware, schema validation, reusable React hooks/components, and public/private access behavior.
+
+Use careful wording:
+- Good wording: "JWT-based auth", "owner-scoped CRUD", "Zod validation", "encrypted share links".
+- Avoid claiming advanced search, pagination, caching, RBAC, rate limiting, or Redis.
+
+
+ Project - SkillSchool
+
+Project description:
+SkillSchool is a backend-only course-selling API for an online learning platform. It supports user/admin authentication, course creation and updates, course listing, purchases, and user-owned course retrieval.
+
+Stack:
+Node.js, Express.js, MongoDB, Mongoose, Zod, JWT, bcrypt, dotenv.
+
+Architecture:
+- Express backend with separate user, admin, and course route modules.
+- Mongoose models for users, admins, courses, and purchases.
+- Auth middleware separates user and admin protected workflows.
+- Zod request validation for signup/signin and course payloads.
+- bcrypt password hashing/comparison for user and admin credentials.
+
+Core workflows:
+- User signup/signin.
+- Admin signup/signin.
+- Admin course creation, update, and owned-course listing.
+- Public course listing.
+- User course purchase and purchased-course listing.
+
+Resume bullets:
+- Built a Node.js/Express REST API for a course-selling platform with separate user, admin, and course route modules backed by MongoDB/Mongoose models.
+- Implemented user/admin authentication middleware using JWT verification to protect course and account workflows.
+- Added credential validation and secure password handling using Zod schemas, bcrypt hashing, bcrypt comparison, and duplicate-email handling.
+- Designed MongoDB/Mongoose schemas for users, admins, courses, and purchases, including references between course creators and purchased courses.
+- Implemented ownership-aware admin course operations by filtering course updates and listings through the authenticated admin ID.
+- Built course listing and purchased-course APIs that join course and creator details from MongoDB documents.
+
+What this project proves:
+- Focused backend API fundamentals in Node.js/Express.
+- Understanding of role-separated auth flows, MongoDB modeling, request validation, and protected route design.
+- Useful junior/backend resume signal even though it is simpler than DrawInSync and Brainsily.
+
+Use careful wording:
+- Good wording: "backend-only REST API", "course-selling platform API", "role-separated user/admin workflows".
+- Avoid claiming a full frontend, payment integration, production RBAC, tests, caching, or deployment for this repo.
+
+
+ Supporting Project - Support Me Dashboard (shadcn)
+
+Project description:
+Support Me is a frontend-only Next.js customer-support dashboard UI. It includes welcome/login/signup screens, responsive dashboard navigation, theme switching, stats tabs, charts, employee tables, and skeleton loading states.
+
+Stack:
+Next.js 15 App Router, React 19, TypeScript, Tailwind CSS v4, shadcn/Radix UI primitives, React Hook Form, Zod, Recharts, TanStack React Table, Vaul drawer, next-themes, lucide-react.
+
+Resume bullets:
+- Built a typed Next.js dashboard UI with grouped layouts, responsive desktop sidebar, mobile drawer navigation, active route highlighting, and dark/light theme support.
+- Implemented signup/login forms with React Hook Form and Zod, including conditional company fields, date-of-birth validation, password confirmation, terms acceptance, and typed schema inference.
+- Created reusable UI behavior including password visibility toggling, theme toggle tooltips, and mobile drawer state management.
+- Built dashboard analytics using Recharts for work-location trends, team distribution, and support-ticket resolution trends with responsive containers and custom tooltips.
+- Developed a typed data table with TanStack React Table pagination, reusable column definitions, avatars, badges, and skeleton loading rows.
+
+What this project proves:
+- Strong frontend/UI implementation with modern Next.js, TypeScript, component libraries, forms, charts, and tables.
+- Useful for full-stack roles because it shows ability to build the product surface around backend systems.
+
+Use careful wording:
+- Good wording: "frontend dashboard UI", "mock/static data dashboard", "typed form validation".
+- Avoid claiming backend/API/database integration for this project.
+
+
+ Supporting Project - GoContacts
+
+Project description:
+GoContacts is a full-stack contact management application for storing contacts, organizing them with labels, bulk deleting contacts, and allowing an admin-style role to enable or disable user access.
+
+Stack:
+ASP.NET MVC 5, ASP.NET Web API, C#, Entity Framework 6, LINQ, ASP.NET Identity, OWIN cookie auth, SQL Server LocalDB, Razor views, Bootstrap 5, jQuery, NUnit/Moq test project.
+
+Resume bullets:
+- Built a full-stack contact management application with authenticated user flows, contact CRUD, label-based organization, and server-rendered Razor views.
+- Modeled user-owned contacts and labels using Entity Framework Code First, validation attributes, foreign keys, and a composite-key join table for contact-label relationships.
+- Implemented per-user contact querying and label filtering with LINQ and EF eager loading.
+- Created typed view models for contact forms and list pages, supporting multi-select label assignment and strongly typed Razor rendering.
+- Added an AJAX bulk-delete workflow that posts selected contact IDs to a Web API endpoint and deletes contact/tag associations before deleting contacts.
+- Extended ASP.NET Identity with an IsEnabled user flag and built role-gated admin screens to enable/disable user access.
+
+What this project proves:
+- Broader backend/database understanding beyond Node.js.
+- Practical relational modeling, MVC structure, Identity auth, admin workflows, and CRUD-heavy product development.
+
+Use careful wording:
+- Good wording: "ASP.NET MVC contact management app", "Entity Framework Code First", "Identity-based auth".
+- For a Node.js/backend resume, keep this project shorter than DrawInSync, Brainsily, and SkillSchool.
+
+
+ Supporting Project - Tailwind Music Festival Page
+
+Project description:
+Frontend-only React/Vite/Tailwind music festival landing page. It includes sticky navigation, mobile menu, ticket submenu, hero section, newsletter form, headliner carousel, lineup timeline, ticket table, dark mode, and custom animations.
+
+Stack:
+React 19, TypeScript, Vite, Tailwind CSS v4, ESLint, local image assets.
+
+Resume bullets:
+- Built a responsive React/TypeScript event landing page with sticky navigation, mobile hamburger menu, ticket submenu, and dark-mode toggle.
+- Implemented an image-based hero section and newsletter form using Tailwind utility styling and theme-aware colors.
+- Created a horizontally scrollable headliner carousel using refs, scroll controls, responsive card widths, and CSS scroll snapping.
+- Built lineup and ticket sections with a sticky timeline marker and responsive ticket actions.
+- Extended Tailwind v4 with custom keyframes, animation utilities, dark variant, and open-state variants.
+
+Use careful wording:
+- Good wording: "frontend landing page", "responsive Tailwind implementation".
+- Avoid using this as a primary backend project. It is best as a short supporting frontend line or portfolio item.
+
+ Consolidated Resume Bullets
+
+Use 4-6 of these depending on resume space:
+
+- Built full-stack applications with React/Next.js frontends and Node.js/Express backends, integrating JWT authentication, protected routes, schema validation, and database-backed user workflows.
+- Designed REST APIs for content management, course platforms, and collaborative boards using Express.js, TypeScript, Zod, and route-level auth middleware.
+- Modeled application data using MongoDB/Mongoose and PostgreSQL/Prisma, including users, content, courses, purchases, boards, collaborators, and drawable elements.
+- Implemented secure credential flows using bcrypt/Argon2 hashing, JWT issuance, duplicate-account handling, and authenticated API access in Node.js projects.
+- Prototyped real-time collaboration with WebSockets by authorizing socket connections with JWTs and broadcasting canvas drawing events to board-scoped connection groups.
+- Built reusable frontend flows with React hooks, NextAuth sessions, modals, dashboards, data tables, charts, responsive navigation, and Tailwind CSS layouts.
+- Implemented public/private sharing behavior by generating encrypted share links and rendering read-only shared content views.
+- Created owner-scoped CRUD APIs and access checks for user-owned content, admin-owned courses, and collaborative board resources.
+- Used monorepo tooling with pnpm workspaces and Turborepo to separate frontend, HTTP API, WebSocket service, database, shared schema, and config packages.
+- Documented project setup, API workflows, environment variables, architecture, and future improvements through README/API docs.
+
+
+ Suggested Resume Project Entries
+
+DrawInSync - Real-time Collaborative Whiteboard
+TypeScript, Node.js, Express, WebSocket, Next.js, Prisma, PostgreSQL, JWT, Argon2, Zod, Turborepo
+- Built a collaborative whiteboard monorepo with separate Next.js frontend, Express HTTP API, WebSocket server, shared Prisma client, and shared Zod validation package.
+- Implemented authenticated board workflows including signup/signin, board creation, collaborator access, slug lookup, board detail retrieval, and JWT-based WebSocket token generation.
+- Prototyped board-scoped real-time synchronization by broadcasting canvas shape events across JWT-authorized WebSocket connections.
+
+Brainsily - Full-stack Second Brain App
+React, TypeScript, Node.js, Express, MongoDB, Mongoose, JWT, Zod, Tailwind CSS
+- Built a full-stack knowledge management app for saving, filtering, deleting, and sharing notes, links, tweets, and YouTube videos.
+- Implemented JWT-protected Express APIs, Zod request validation, Mongoose data models, owner-scoped content CRUD, and encrypted public share links.
+- Created a React dashboard with reusable cards, sidebar filters, modals, rich media previews, toast notifications, and responsive Tailwind layout.
+
+SkillSchool - Course-selling Backend API
+Node.js, Express, MongoDB, Mongoose, JWT, bcrypt, Zod
+- Built a backend REST API for a course-selling platform with separate user, admin, and course route modules.
+- Implemented user/admin authentication with Zod validation, bcrypt password hashing, JWT middleware, and protected course workflows.
+- Modeled users, admins, courses, and purchases in MongoDB and added ownership-aware admin course creation, update, and listing endpoints.
+
+Support Me Dashboard - Next.js Dashboard UI
+Next.js, React, TypeScript, Tailwind CSS, shadcn/Radix UI, React Hook Form, Zod, Recharts, TanStack Table
+- Built a responsive dashboard UI with desktop/mobile navigation, dark/light theme support, typed auth forms, charts, tabs, tables, and skeleton loading states.
+- Used React Hook Form, Zod, Recharts, and TanStack Table to create typed form validation, analytics views, and paginated data-table interactions.
+
+
+ ATS Keywords
+
+Node.js, Express.js, TypeScript, JavaScript, REST API, WebSocket, ws, JWT, authentication, authorization, Zod, bcrypt, Argon2, MongoDB, Mongoose, PostgreSQL, Prisma ORM, React, Next.js, NextAuth, Vite, React Router, Axios, Tailwind CSS, shadcn, Radix UI, Recharts, TanStack Table, pnpm workspace, Turborepo, monorepo, API design, schema validation, protected routes, middleware, CRUD, database modeling, real-time collaboration, canvas, role-based workflows, full-stack development.
+
+
+ Avoid or only mention as future improvements:
+- Production-ready security.
+- Horizontal WebSocket scaling.
+- Redis/pub-sub.
+- Caching layer.
+- Rate limiting.
+- Payment integration.
+- Full automated test coverage.
+- Complete RBAC.
+- Password hashing in Brainsily.
+- Complete element persistence/replay in DrawInSync.
+- Backend/API integration in shadcn or tailwind.
+
+
+ Timeline Notes From Local Git History
+
+- Brainsily: core work and sharing/deployment commits are visible around Jan 2025, with README/docs updates in Jun 2025.
+- DrawInSync: main implementation history is visible around Mar 2025, with README/docs updates in Jun 2025.
+- SkillSchool: core/documentation commits are visible around Dec 2024, with README updates Jan 2025.
+- shadcn dashboard: active implementation commits are visible from Sep-Oct 2025.
+- tailwind landing page: active implementation commits are visible in Sep-Oct 2025.
+- GoContacts: main implementation history is visible around Mar-Apr 2024.

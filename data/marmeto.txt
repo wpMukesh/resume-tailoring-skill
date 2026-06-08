@@ -1,0 +1,83 @@
+Marmeto Resume Point Bank
+Target roles: Node.js Backend Developer / Full Stack Developer
+Experience duration: Jul 2023 - Nov 2023
+Role title: Frontend Intern
+Company: Marmeto Enabling Commerce, Bengaluru / HSR Layout
+
+Resume positioning:
+
+Marmeto should be a short frontend/e-commerce experience section on a Node.js/backend resume. Use it to show JavaScript fundamentals, Shopify storefront work, responsive UI, e-commerce workflows, API-consumption debugging, and client delivery discipline.
+
+Keep client names generalized as "client Shopify stores" or "client e-commerce storefronts". The named demo store, TSM Lifestyle / mukesh-ts-store, is your demo storefront and can be mentioned if used as a project.
+
+Short role summary:
+
+Frontend Intern at Marmeto, working on Shopify-based e-commerce storefronts using Shopify Liquid, JavaScript, HTML, CSS, and Tailwind-style utility classes. Built a complete demo Shopify storefront with a sample product catalog, contributed to client product-detail and homepage workflows, fixed API/layout/responsiveness issues across client storefronts, and tracked assigned work using Monday.com.
+
+Consolidated point bank:
+
+- Completed frontend and Shopify training covering Shopify Liquid, JavaScript, HTML, CSS, responsive layouts, storefront structure, product pages, collection pages, and cart workflows.
+
+- Built TSM Lifestyle / mukesh-ts-store, a complete demo Shopify storefront using a sample product catalog, with product listings, collection pages, product-detail pages, cart drawer behavior, storefront sections, and responsive navigation.
+
+- Implemented product-detail workflows using Shopify Liquid, JavaScript, and CSS, including variant selection, dynamic price updates, product image changes, quantity handling, and add-to-cart interactions.
+
+- Worked on client product-detail pages and homepage sections, translating design references and client requirements into responsive Shopify storefront UI.
+
+- Implemented storefront changes across Shopify Liquid, JavaScript, and CSS depending on the task requirement, including template updates, client-side behavior, and responsive styling fixes.
+
+- Fixed frontend issues across multiple client Shopify stores, including API consumption, external API usage, layout alignment, mobile responsiveness, spacing, overflow, and broken JavaScript interactions.
+
+- Debugged storefront behavior using browser DevTools, DOM inspection, CSS/layout analysis, JavaScript event debugging, Shopify Liquid output checks, and responsive viewport testing.
+
+- Built and adjusted reusable storefront sections/components with attention to spacing, alignment, responsive breakpoints, typography, and interactive behavior.
+
+- Implemented and revised scroll-based homepage interactions based on review feedback and user-experience concerns.
+
+- Collaborated with team members and client-facing stakeholders to clarify requirements, implement changes, handle review feedback, and verify storefront behavior.
+
+- Planned assigned tasks, tracked progress, and logged time using Monday.com for delivery visibility.
+
+- Learned professional frontend workflow through task breakdowns, QA cycles, bug fixing, code reviews, and client/store delivery work.
+
+Strongest ATS keywords:
+
+JavaScript, Shopify, Shopify Liquid, HTML, CSS, Tailwind CSS, Responsive Design, E-commerce, Product Detail Page, Collection Page, Cart Drawer, Add to Cart, Variant Selection, Dynamic Price Updates, API Consumption, External API Usage, DOM, Browser DevTools, Frontend Development, UI Debugging, Mobile Responsiveness, Monday.com, Client Requirements.
+
+Short final resume versions:
+
+Version 1 - Full-stack resume friendly:
+
+Frontend Intern at Marmeto, contributing to Shopify-based e-commerce storefronts using Shopify Liquid, JavaScript, HTML, CSS, and Tailwind-style utilities. Built a complete demo storefront, implemented product-detail and cart interactions, fixed API/layout/responsiveness issues across client storefronts, and tracked delivery tasks using Monday.com.
+
+Version 2 - Resume bullet set:
+
+- Developed Shopify storefront pages and e-commerce workflows using Shopify Liquid, JavaScript, HTML, CSS, and Tailwind-style utility classes.
+- Built a complete demo storefront with product listing, collection, product-detail, cart drawer, and responsive navigation workflows using a sample product catalog.
+- Implemented product-detail interactions including variant selection, dynamic price/image updates, quantity handling, and add-to-cart behavior.
+- Fixed API consumption, external API usage, layout alignment, and responsiveness issues across multiple client Shopify storefronts.
+- Worked with team members and client-facing stakeholders to clarify requirements, implement review feedback, and track delivery through Monday.com.
+
+Version 3 - Compact resume bullet set:
+
+- Built Shopify storefront pages using Shopify Liquid, JavaScript, HTML, and CSS, including product-detail, collection, cart drawer, and responsive navigation workflows.
+- Implemented product variant selection, dynamic price/image updates, and add-to-cart interactions for e-commerce product pages.
+- Fixed API consumption, JavaScript interaction, layout, and responsiveness issues across multiple client Shopify storefronts.
+
+Version 4 - Very compact if Marmeto is only a short entry:
+
+- Developed Shopify storefront pages and fixed client-side JavaScript, API consumption, layout, and responsiveness issues across e-commerce client stores.
+
+Use careful wording:
+
+- Good wording: "frontend intern", "Shopify storefronts", "Shopify Liquid", "client-side JavaScript", "product-detail workflows", "responsive e-commerce pages", "API consumption fixes", "translated design references into storefront UI".
+- Avoid overclaiming: do not say "owned Shopify backend", "built full production stores end to end", "led all frontend development", or "handled payments/checkout" unless confirmed.
+- For backend-focused resumes, keep Marmeto to 1-3 bullets. Use TSM Lifestyle / mukesh-ts-store as a project only if project space is available.
+
+Clarified details:
+
+- Use "Frontend Intern" as the role title.
+- Generalize client/store names in resume bullets as "client Shopify stores" or "client e-commerce storefronts".
+- TSM Lifestyle is the same as the mukesh-ts-store complete demo storefront.
+- The demo storefront used sample/fake products, but the storefront implementation itself was complete.
+- Used Shopify Liquid, JavaScript, and CSS directly as required by each storefront task.

@@ -1,0 +1,224 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{lmodern}
+\usepackage{latexsym}
+\usepackage[left=0.45in,right=0.45in,top=0.35in,bottom=0.35in]{geometry}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins handled by geometry.
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\renewcommand{\section}[1]{\vspace{5pt}\par\noindent{\large\scshape #1}\par\vspace{1pt}\hrule\vspace{3pt}}
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+	\item\small{
+		{#1 \vspace{-2pt}}
+	}
+}
+
+\newcommand{\resumeSubheading}[4]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+	\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\textit{\small#1} & \textit{\small #2} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{@{}p{0.78\textwidth}@{\extracolsep{\fill}}r@{}}
+      \small #1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeExperienceProject}[2]{
+    \item[]
+    \begin{tabular*}{0.97\textwidth}{@{}p{0.50\textwidth}@{\extracolsep{\fill}}>{\raggedleft\arraybackslash}p{0.42\textwidth}@{}}
+      \small\textbf{#1} & \small #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{list}{}{\setlength{\leftmargin}{0in}\setlength{\itemsep}{0pt}\setlength{\parsep}{0pt}\setlength{\topsep}{0pt}}}
+	\newcommand{\resumeSubHeadingListEnd}{\end{list}}
+\newcommand{\resumeItemListStart}{\begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parsep}{0pt}\setlength{\topsep}{1pt}}
+	\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+	
+	%----------HEADING----------
+	% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+		%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+		%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+		% \end{tabular*}
+	
+	\begin{center}
+		\textbf{\Huge \scshape Mukesh T S} \\ \vspace{1pt}
+		\small Full Stack Engineer $|$ Node.js, TypeScript, React, PostgreSQL, Redis \\ \vspace{1pt}
+		\small +919481986729 $|$ \href{mailto:tsmukesh51@outlook.com}{\underline{tsmukesh51@outlook.com}}
+		$|$  \href{https://www.linkedin.com/in/tsmukesh51}{\underline{linkedin.com/in/tsmukesh51}} $|$ \href{https://github.com/tsMukesh51}{\underline{github.com/tsMukesh51}}
+	\end{center}
+	
+	
+	%----------------------------------------------------------------------------------------
+	%	PROFESSIONAL SUMMARY
+	%----------------------------------------------------------------------------------------
+	\section{\textbf{Professional Summary}}
+	Full Stack Engineer with 2+ years of experience building scalable backend systems and internal tools using Node.js, TypeScript, and PostgreSQL. Experienced in designing data models, implementing validation systems, and optimizing application performance for real-world use cases.
+	
+	Built and maintained ERP modules and automation systems that improved operational efficiency with strong focus on writing maintainable code, solving complex backend problems, and improving observability using tools like Redis, Datadog, and structured logging.
+	
+	Worked across the stack with React, while primarily focused on backend architecture, APIs, system design, performance, and building scalable, production-ready applications.
+	
+	%-----------EXPERIENCE-----------
+	\section{Experience}
+	\resumeSubHeadingListStart
+	
+	\resumeSubheading
+	{Full Stack Developer}{\hfill Apr 2025 -- Present}
+	{WebSpruce Software Solutions}{Bengaluru, Karnataka}
+	\resumeExperienceProject
+	{School/College ERP Platform}{Node.js, Express, MongoDB, React}
+	\resumeItemListStart
+	\resumeItem{Built ERP modules for fee collection, marks, attendance, reports, SMS communication, tasks, notifications, and role permissions across Node.js/Express/MongoDB backends and React frontends.}
+	\resumeItem{Implemented fee, receipt, deleted-receipt audit, marks, exam, and attendance workflows with PDF/Excel exports using MongoDB aggregation, Puppeteer, Handlebars, and ExcelJS.}
+	\resumeItem{Built React admin interfaces with React Query, Tailwind/MUI, protected routes, filters, file uploads, loading states, and PDF/Excel download actions.}
+	\resumeItemListEnd
+	\resumeExperienceProject
+	{Note For Approval Workflow System}{TypeScript, Hono, PostgreSQL, Drizzle, Zod, React}
+	\resumeItemListStart
+	\resumeItem{Led development of an internal NFA approval workflow using Hono, TypeScript, PostgreSQL, Drizzle ORM, Redis, Zod, React/Vite, TanStack Query/Table, React Hook Form, dnd-kit, and LexoRank.}
+	\resumeItem{Implemented dynamic request-detail forms, runtime validation, member-management workflows, cursor pagination, reusable API wrappers, and typed table/list components.}
+	\resumeItemListEnd
+	
+	% -----------Multiple Positions Heading-----------
+	%    \resumeSubSubheading
+	%     {Software Engineer I}{Oct 2014 - Sep 2016}
+	%     \resumeItemListStart
+	%        \resumeItem{Apache Beam}
+	%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+	%     \resumeItemListEnd
+	%    \resumeSubHeadingListEnd
+	%-------------------------------------------
+	
+	\resumeSubheading
+	{Junior Software Engineer}{\hfill Dec 2023 -- Mar 2025}
+	{Cognizant Technology Solutions}{Coimbatore, Tamil Nadu}
+	\resumeExperienceProject
+	{Insurance Client Production Support}{Splunk, Datadog, MySQL, JIRA}
+	\resumeItemListStart
+	\resumeItem{Triaged production issues for an insurance-domain client application using Splunk, Datadog, MySQL queries, JIRA tickets, and documented support runbooks.}
+	\resumeItem{Coordinated with support and development teams to reproduce defects, share logs/query outputs, validate fixes, and document API/error-triage processes.}
+	\resumeItemListEnd
+	\resumeExperienceProject
+	{Node.js Automation and Observability}{Node.js, CSV/XLSX, Datadog, Splunk}
+	\resumeItemListStart
+	\resumeItem{Built automation scripts to process and transform Excel data, reducing manual effort by 2--3 hours per employee weekly.}
+	\resumeItem{Designed Datadog/Splunk dashboards, saved searches, monitors, and alerts using YAML/Terraform-style configuration, improving system visibility and reducing fault identification time by $\sim$70\%.}
+	\resumeItemListEnd
+	
+	\resumeSubHeadingListEnd
+	
+	
+	%-----------PROJECTS-----------
+	\section{Projects}
+	\resumeSubHeadingListStart
+	\resumeProjectHeading
+	{\textbf{DrawInSync} $|$ \emph{NextJS, Express, WebSockets, PostgreSQL, Docker}} {In Progress}
+	\resumeItemListStart
+	\resumeItem{A real-time collaborative drawing platform enabling multiple users to draw on a shared canvas simultaneously by interactive drawing using WebSockets, implemented with HTML5 Canvas APIs.}
+	\resumeItem{Designed backend services to handle concurrent updates and ensure state synchronization across clients.}
+	\resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{TSM Lifestyle} $|$ \emph{JavaScript, HTML, Tailwind, Shopify Liquid} \href{https://mukesh-ts-store.myshopify.com}{\underline{Live}} (pass: sEcure)}{\hfill Jul 2023 -- Aug 2023}
+          \resumeItemListStart
+            \resumeItem{Developed a custom e-commerce storefront with product listings, collections, and dynamic product views.}
+            \resumeItem{Implemented client-side logic for variant selection, price updates, filtering, and add-to-cart workflows using JavaScript.}
+	\resumeItemListEnd
+	\resumeSubHeadingListEnd
+	
+	
+	
+	%
+	%-----------PROGRAMMING SKILLS-----------
+	\section{Technical Skills}
+	\begin{list}{}{\setlength{\leftmargin}{0.15in}}
+		\small{\item{
+				\textbf{Languages}{: TypeScript, JavaScript, SQL} \\
+				\textbf{Backend}{: Node.js, Hono, Express, REST API Design} \\
+				\textbf{Frontend}{: React, React Query, RHF, Tailwind CSS, Shadcn} \\
+				\textbf{Databases}{: PostgreSQL, MongoDB} \\
+				\textbf{Tools \& Technologies}{: Redis, Docker, Git, Terraform, Datadog, Splunk}\\
+				\textbf{Other}{: WebSockets, Zod, Problem Solving}
+		}}
+	\end{list}
+	
+	
+	%-----------EDUCATION-----------
+	\section{Education}
+	\resumeSubHeadingListStart
+	\resumeSubheading
+	{B.E in Electronics and Communication Engineering}{}
+	{Global Academy of Technology (VTU), Bengaluru}{\hfill Jul 2019 -- Jun 2023}
+	\resumeSubHeadingListEnd
+	
+	
+	%-------------------------------------------
+\end{document}

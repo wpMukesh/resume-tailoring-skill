@@ -1,0 +1,41 @@
+Experience
+
+Company: Webspruce
+
+Project: Note For Approval Workflow System, A approval workflow system used in manufacturing industry where users create Note For Approval requests from reusable templates, fill dynamic request details, where they clarify and get approvals. The system used Hono, PostgreSQL, Drizzle ORM, Zod, React, Vite, TanStack Query, TanStack Table, React Hook Form, Tailwind, and dnd-kit.
+
+- Built a NFA workflow product covering template-based request creation, dynamic request details, role-based member management, clarifications, and approval routing, with strict TypeScript, linting, formatting, pre-commit hooks, and build checks maintained across frontend and backend repositories.
+
+- Designed an extensible PostgreSQL schema for a template-based approval workflow, supporting admin-created templates, dynamic request details, approver/viewer/clarifier members, clarifications, posts, and edit history.
+
+- Standardized API response envelopes for success, error, warning, and no-op cases, allowing the frontend to consistently handle typed data, server-driven user-visible warnings, validation failures, and unchanged updates.
+
+- Built composable Zod primitives, schema factories, typed API wrappers, and normalized React Query key factories to keep backend APIs, frontend clients, RHF validation, cache reads, and invalidations type-safe and consistent.
+
+- Designed reusable list API patterns with search, typed date filters, typed sort columns, cursor pagination, and hydrated listing responses, improving consistency across modules and reducing extra frontend data-fetching.
+
+- Built a template-configured request form system where admins creates fields such as rich text, options, and numeric inputs, configures template using these fields. As well as an intiutive responsive UIs for field creation, template configuration, and request details submission.
+
+- Implemented server-authoritative, configuration-driven validation for submitted request details, enforcing option membership, template configuration like required fields, selected fields, and more.
+
+- Built role-based request member workflows for approvers, viewers, and clarifiers, supporting drag-and-drop approver ordering with atomic reorder updates.
+
+- Built reusable frontend data-table components with configurable debounced search, selectable date filters, type-safe column sorting, loading states, and cursor-based pagination with previously visited page navigation.
+
+Project: School & University ERP, school/college ERP modules used by school administrators, finance teams, teachers, students, HODs, deans, COE users, and other staff. The ERP work covered fee management, academic marks, attendance, SMS communication, reports, role permissions, campus availability, tasks, meetings, notifications, PDF/Excel generation, and React/React Native workflow screens.
+
+- Optimized ERP reporting and bulk-update workflows using MongoDB aggregation pipelines, server-side filtering,  map-based data grouping, and batched bulkWrite operations to reducing db overload, remove unnecessary data processing and improve report generation performance.
+
+- Built fee collection workflows supporting class/category-based fee allocation, new-joinee and transport fee handling, partial payments, concessions, penalties, miscellaneous amounts, payment-mode validation, and deleted-receipt audit history.
+
+- Built finance audit and reporting workflows with fee overview dashboards, wide range of filters, multi-format receipt generation, Excel reports, and filtered collection summaries for finance teams.
+
+- Built exam and academic marks workflows covering exam scheduling, hall-ticket generation, attendance tracking, marks entry, bulk marks updates through Excel import/export, marks-freeze dates, exam results.
+
+- Built academic reporting workflows including configurable consolidated reports, subject-wise and division-wise analytics, progress reports and marks-card generation across multiple class-specific formats.
+
+- Built SMS communication workflows with provider integration and delivery-status webhooks, OTPs, role-based bulk messages, failed-message retry, automated absence alerts and communication reporting.
+
+- Built attendance workflows that auto-configured attendance from timetables and semester calendars, allowing lecturers to take attendance for scheduled lectures and lab sessions without manual setup.
+
+- Built administrative workflows for HODs and administrators, covering meeting scheduling, task assignment, lecturer availability by date/slot, and room occupancy views to identify free lecturers, occupied rooms, and available spaces.
