@@ -72,7 +72,7 @@ Job Title: Frontend Intern
 
 Project: E-commerce Storefront Development | Shopify Liquid, JavaScript, HTML, CSS, Tailwind, Monday.com
 
-- MISSING SUMMARY
+- Supported Shopify-based e-commerce storefront development by building configurable storefront pages, reusable sections, and responsive UI across multiple client stores.
 
 - Developed configurable Shopify product-detail page templates for a client storefront, allowing products to use different PDP layouts configured through store-editor settings while supporting dynamic product content.
 

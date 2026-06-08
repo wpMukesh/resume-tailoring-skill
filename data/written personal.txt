@@ -1,0 +1,17 @@
+Project: DrawInSync | TypeScript, Node.js, Express.js, WebSocket, Next.js, NextAuth, Prisma, PostgreSQL, Zod, Monorepo, Tailwind
+
+- Built a real-time collaborative whiteboard prototype using a monorepo with a Next.js frontend, Express.js HTTP API, WebSocket server, and shared database, config, and type packages.
+
+- Designed PostgreSQL data models for collaborative board workflows, collaborator access, board content, and board-level relationships. and integrated NextAuth with custom backend authentication to bridge client session with Next.js server enabling API access from client.
+
+- Prototyped real-time board synchronization using a standalone WebSocket server with short-lived authorized connections, board-scoped broadcast group and syncing board content through the backend ensuring consistency and persisting the same.
+
+- Implemented a canvas drawing engine that supports rectangles, circles, and lines, tracks pending vs synced shapes, screen-to-canvas coordinate translation, and redraw handling on canvas updates.
+
+Project: Brainsily | TypeScript, Node.js, Express.js, React, MongoDB, Zod, Tailwind
+
+- Built a full-stack second-brain application for saving, organizing, filtering, deleting, and sharing notes, links, tweets, and YouTube videos.
+
+- Implemented backend with authentication middleware, Zod validation, owner-scoped content access, structured REST APIs and MongoDB data models for user-owned content and tagging workflows.
+
+- Created a responsive React dashboard with reusable cards, sidebar filters, modals, rich tweet/YouTube previews, clipboard sharing, toast notifications, read-only shared views.
